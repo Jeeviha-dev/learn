@@ -1,0 +1,136 @@
+[
+   {
+     "id": 1,
+     "title": "Engineering Mathematics I",
+     "subject": "MA8151",
+     "semester": 1,
+     "url": "https://drive.google.com/file/d/sem1-maths/view"
+   },
+   {
+     "id": 2,
+     "title": "Problem Solving and Python Programming",
+     "subject": "GE8151",
+     "semester": 1,
+     "url": "https://drive.google.com/file/d/sem1-python/view"
+   },
+   {
+     "id": 3,
+     "title": "Engineering Physics",
+     "subject": "PH8151",
+     "semester": 1,
+     "url": "https://drive.google.com/file/d/sem1-physics/view"
+   },
+   {
+     "id": 4,
+     "title": "Engineering Mathematics II",
+     "subject": "MA8251",
+     "semester": 2,
+     "url": "https://drive.google.com/file/d/sem2-maths/view"
+   },
+   {
+     "id": 5,
+     "title": "Basic Electrical & Electronics Engineering",
+     "subject": "BE8254",
+     "semester": 2,
+     "url": "https://drive.google.com/file/d/sem2-beee/view"
+   },
+   {
+     "id": 6,
+     "title": "Digital Principles and System Design",
+     "subject": "EC8251",
+     "semester": 2,
+     "url": "https://drive.google.com/file/d/sem2-dpsd/view"
+   },
+   {
+     "id": 7,
+     "title": "Data Structures",
+     "subject": "CS8391",
+     "semester": 3,
+     "url": "https://drive.google.com/file/d/sem3-ds/view"
+   },
+   {
+     "id": 8,
+     "title": "Object Oriented Programming",
+     "subject": "CS8392",
+     "semester": 3,
+     "url": "https://drive.google.com/file/d/sem3-oops/view"
+   },
+   {
+     "id": 9,
+     "title": "Operating Systems",
+     "subject": "CS8493",
+     "semester": 4,
+     "url": "https://drive.google.com/file/d/sem4-os/view"
+   },
+   {
+     "id": 10,
+     "title": "Database Management Systems",
+     "subject": "CS8492",
+     "semester": 4,
+     "url": "https://drive.google.com/file/d/sem4-dbms/view"
+   },
+   {
+     "id": 11,
+     "title": "Computer Networks",
+     "subject": "CS8591",
+     "semester": 5,
+     "url": "https://drive.google.com/file/d/sem5-cn/view"
+   },
+   {
+     "id": 12,
+     "title": "Internet Programming",
+     "subject": "CS8501",
+     "semester": 5,
+     "url": "https://drive.google.com/file/d/sem5-ip/view"
+   },
+   {
+     "id": 13,
+     "title": "Software Engineering",
+     "subject": "CS8494",
+     "semester": 5,
+     "url": "https://drive.google.com/file/d/sem5-se/view"
+   },
+   {
+     "id": 14,
+     "title": "Cloud Computing",
+     "subject": "CS8791",
+     "semester": 6,
+     "url": "https://drive.google.com/file/d/sem6-cc/view"
+   },
+   {
+     "id": 15,
+     "title": "Artificial Intelligence",
+     "subject": "CS8691",
+     "semester": 6,
+     "url": "https://drive.google.com/file/d/sem6-ai/view"
+   },
+   {
+     "id": 16,
+     "title": "Cryptography and Network Security",
+     "subject": "CS8792",
+     "semester": 6,
+     "url": "https://drive.google.com/file/d/sem6-cns/view"
+   },
+   {
+     "id": 17,
+     "title": "Mobile Computing",
+     "subject": "CS8701",
+     "semester": 7,
+     "url": "https://drive.google.com/file/d/sem7-mc/view"
+   },
+   {
+     "id": 18,
+     "title": "Big Data Analytics",
+     "subject": "CS8793",
+     "semester": 7,
+     "url": "https://drive.google.com/file/d/sem7-bda/view"
+   },
+   {
+     "id": 19,
+     "title": "Project Management",
+     "subject": "MG8591",
+     "semester": 7,
+     "url": "https://drive.google.com/file/d/sem7-pm/view"
+   }
+ ]
+ 
