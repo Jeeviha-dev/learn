@@ -3,65 +3,43 @@ import Navbar from '../components/Navbar'
 
 function Lessons() {
   const [index, setIndex] = useState(0)
-  const [completedUnits, setCompletedUnits] = useState([])
+  const [completed, setCompleted] = useState([])
   const [lessons, setLessons] = useState([])
 
+  // Load notes.json
   useEffect(() => {
-    // Fetch notes.json on mount
     fetch('/notes.json')
       .then(res => res.json())
       .then(data => {
-        // Example: filter for semester 6 only
-        const semester6 = data.filter(note => note.semester === 6)
-
-        const formatted = semester6.map(note => ({
-          unit: note.title,
-          type: 'note',
-          content: `${note.subject} - Semester ${note.semester}`,
-          link: note.url
-        }))
-
-        // Add to your default lesson units if needed
-        const defaultLessons = [
-          {
-            unit: 'Unit 1: Basics',
-            type: 'video',
-            link: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-          },
-          {
-            unit: 'Unit 2: Variables & Data Types',
-            type: 'note',
-            content: 'In this unit, we cover JavaScript variables, const/let/var, and basic data types.',
-          },
-          {
-            unit: 'Unit 3: Functions & Scope',
-            type: 'video',
-            link: 'https://www.youtube.com/embed/y7QnFLa5WkQ',
-          }
-        ]
-
-        setLessons([...defaultLessons, ...formatted])
+        const allSubjects = data.flatMap(sem =>
+          sem.subjects.map(sub => ({
+            unit: sub.title,
+            subject_code: sub.subject_code,
+            semester: sem.semester,
+            link: sub.url
+          }))
+        )
+        setLessons(allSubjects)
       })
   }, [])
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('completedLessons')) || []
-    setCompletedUnits(saved)
+    setCompleted(saved)
   }, [])
 
   useEffect(() => {
-    localStorage.setItem('completedLessons', JSON.stringify(completedUnits))
-  }, [completedUnits])
+    localStorage.setItem('completedLessons', JSON.stringify(completed))
+  }, [completed])
 
-  if (lessons.length === 0) return <div>Loading lessons...</div>
+  if (lessons.length === 0) return <div>Loading...</div>
 
   const current = lessons[index]
-  const isCompleted = completedUnits.includes(current.unit)
+  const isCompleted = completed.includes(current.unit)
 
   const markComplete = () => {
-    const unitName = current.unit
-    if (!completedUnits.includes(unitName)) {
-      setCompletedUnits([...completedUnits, unitName])
+    if (!isCompleted) {
+      setCompleted(prev => [...prev, current.unit])
     }
   }
 
@@ -76,52 +54,79 @@ function Lessons() {
   return (
     <>
       <Navbar />
-      <div style={{ padding: '30px' }}>
-        <h2>📚 {current.unit} ({current.type === 'video' ? 'Video' : 'Note'})</h2>
+      <div
+        style={{
+          backgroundImage: 'url("/background1.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh',
+          width: '100%',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          zIndex: -1
+        }}
+      />
 
-        <div style={{
-          margin: '20px 0',
-          border: '1px solid #ccc',
-          padding: '20px',
-          borderRadius: '10px'
-        }}>
-          {current.type === 'video' ? (
-            <iframe
-              width="100%"
-              height="400"
-              src={current.link}
-              title="Lesson Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          ) : (
-            <div>
-              <p>{current.content}</p>
-              {current.link && (
-                <a href={current.link} target="_blank" rel="noopener noreferrer">
-                  📥 Open Note
-                </a>
-              )}
-            </div>
-          )}
-        </div>
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          minHeight: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '2rem',
+          color: 'white'
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            backdropFilter: 'blur(10px)',
+            WebkitBackdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255, 255, 255, 0.3)',
+            boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            padding: '2rem',
+            borderRadius: '1rem',
+            maxWidth: '700px',
+            width: '100%'
+          }}
+        >
+          <h2>📚 {current.unit}</h2>
+          <p><strong>Subject Code:</strong> {current.subject_code}</p>
+          <p><strong>Semester:</strong> {current.semester}</p>
 
-        <div style={{ display: 'flex', gap: '20px' }}>
-          <button onClick={prev} disabled={index === 0}>⏮️ Previous</button>
-          <button onClick={next} disabled={index === lessons.length - 1}>⏭️ Next</button>
-
-          <button
-            onClick={markComplete}
-            disabled={isCompleted}
-            style={{
-              marginLeft: 'auto',
-              backgroundColor: isCompleted ? '#ddd' : '#4CAF50',
-              color: isCompleted ? '#333' : '#fff'
+          <a
+            href={current.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (!isCompleted) {
+                setCompleted(prev => [...prev, current.unit])
+              }
             }}
+            style={{ color: '#00f0ff', textDecoration: 'underline' }}
           >
-            {isCompleted ? '✅ Completed' : '✅ Mark as Complete'}
-          </button>
+            📥 Open Note
+          </a>
+
+          <div style={{ marginTop: '20px', display: 'flex', gap: '1rem' }}>
+            <button onClick={prev} disabled={index === 0}>⏮️ Previous</button>
+            <button onClick={next} disabled={index === lessons.length - 1}>⏭️ Next</button>
+            <button
+              onClick={markComplete}
+              disabled={isCompleted}
+              style={{
+                backgroundColor: isCompleted ? '#ddd' : '#4CAF50',
+                color: isCompleted ? '#555' : '#fff',
+                marginLeft: 'auto'
+              }}
+            >
+              {isCompleted ? '✅ Completed' : 'Mark as Completed'}
+            </button>
+          </div>
         </div>
       </div>
     </>
