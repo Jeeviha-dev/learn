@@ -21,8 +21,8 @@ function Lessons() {
         )
         setLessons(allSubjects)
       })
-  }, [])
-// unjeurfvf
+  }, []
+// unjeurfvfds
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('completedLessons')) || []
