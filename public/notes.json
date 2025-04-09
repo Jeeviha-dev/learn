@@ -1,136 +1,142 @@
 [
-   {
-     "id": 1,
-     "title": "Engineering Mathematics I",
-     "subject": "MA8151",
-     "semester": 1,
-     "url": "https://drive.google.com/file/d/sem1-maths/view"
-   },
-   {
-     "id": 2,
-     "title": "Problem Solving and Python Programming",
-     "subject": "GE8151",
-     "semester": 1,
-     "url": "https://drive.google.com/file/d/sem1-python/view"
-   },
-   {
-     "id": 3,
-     "title": "Engineering Physics",
-     "subject": "PH8151",
-     "semester": 1,
-     "url": "https://drive.google.com/file/d/sem1-physics/view"
-   },
-   {
-     "id": 4,
-     "title": "Engineering Mathematics II",
-     "subject": "MA8251",
-     "semester": 2,
-     "url": "https://drive.google.com/file/d/sem2-maths/view"
-   },
-   {
-     "id": 5,
-     "title": "Basic Electrical & Electronics Engineering",
-     "subject": "BE8254",
-     "semester": 2,
-     "url": "https://drive.google.com/file/d/sem2-beee/view"
-   },
-   {
-     "id": 6,
-     "title": "Digital Principles and System Design",
-     "subject": "EC8251",
-     "semester": 2,
-     "url": "https://drive.google.com/file/d/sem2-dpsd/view"
-   },
-   {
-     "id": 7,
-     "title": "Data Structures",
-     "subject": "CS8391",
-     "semester": 3,
-     "url": "https://drive.google.com/file/d/sem3-ds/view"
-   },
-   {
-     "id": 8,
-     "title": "Object Oriented Programming",
-     "subject": "CS8392",
-     "semester": 3,
-     "url": "https://drive.google.com/file/d/sem3-oops/view"
-   },
-   {
-     "id": 9,
-     "title": "Operating Systems",
-     "subject": "CS8493",
-     "semester": 4,
-     "url": "https://drive.google.com/file/d/sem4-os/view"
-   },
-   {
-     "id": 10,
-     "title": "Database Management Systems",
-     "subject": "CS8492",
-     "semester": 4,
-     "url": "https://drive.google.com/file/d/sem4-dbms/view"
-   },
-   {
-     "id": 11,
-     "title": "Computer Networks",
-     "subject": "CS8591",
-     "semester": 5,
-     "url": "https://drive.google.com/file/d/sem5-cn/view"
-   },
-   {
-     "id": 12,
-     "title": "Internet Programming",
-     "subject": "CS8501",
-     "semester": 5,
-     "url": "https://drive.google.com/file/d/sem5-ip/view"
-   },
-   {
-     "id": 13,
-     "title": "Software Engineering",
-     "subject": "CS8494",
-     "semester": 5,
-     "url": "https://drive.google.com/file/d/sem5-se/view"
-   },
-   {
-     "id": 14,
-     "title": "Cloud Computing",
-     "subject": "CS8791",
-     "semester": 6,
-     "url": "https://drive.google.com/file/d/sem6-cc/view"
-   },
-   {
-     "id": 15,
-     "title": "Artificial Intelligence",
-     "subject": "CS8691",
-     "semester": 6,
-     "url": "https://drive.google.com/file/d/sem6-ai/view"
-   },
-   {
-     "id": 16,
-     "title": "Cryptography and Network Security",
-     "subject": "CS8792",
-     "semester": 6,
-     "url": "https://drive.google.com/file/d/sem6-cns/view"
-   },
-   {
-     "id": 17,
-     "title": "Mobile Computing",
-     "subject": "CS8701",
-     "semester": 7,
-     "url": "https://drive.google.com/file/d/sem7-mc/view"
-   },
-   {
-     "id": 18,
-     "title": "Big Data Analytics",
-     "subject": "CS8793",
-     "semester": 7,
-     "url": "https://drive.google.com/file/d/sem7-bda/view"
-   },
-   {
-     "id": 19,
-     "title": "Project Management",
-     "subject": "MG8591",
-     "semester": 7,
-     "url": "https://drive.google.com/file/d/sem7-pm/view"
-   }
- ]
- 
+  {
+    "semester": 1,
+    "subjects": [
+      {
+        "title": "Professional English – I",
+        "subject_code": "HS3151",
+        "url": "https://www.msajce-edu.in/academics/sh/LectureNote/HS3151-LN.pdf"
+      },
+      {
+        "title": "Matrices and Calculus",
+        "subject_code": "MA3151",
+        "url": "https://www.scribd.com/document/595384513/MA3151-Matrices-and-Calculus-Lecture-Notes-1"
+      },
+      {
+        "title": "Engineering Physics",
+        "subject_code": "PH3151",
+        "url": "https://www.poriyaan.in/paper/engineering-physics-3/"
+      },
+      {
+        "title": "Engineering Chemistry",
+        "subject_code": "CY3151",
+        "url": "https://www.scribd.com/document/595384513/MA3151-Matrices-and-Calculus-Lecture-Notes-1"
+      },
+      {
+        "title": "Problem Solving and Python Programming",
+        "subject_code": "GE3151",
+        "url": "https://www.msajce-edu.in/academics/cse/LectureNote/GE3151-LN.pdf"
+      },
+      {
+        "title": "Heritage of Tamils",
+        "subject_code": "GE3152",
+        "url": "https://www.enggtree.com/wp-content/uploads/2024/02/GE3152-Heritage-of-Tamils-Lecture-Notes-1.pdf?x53111"
+      }
+    ]
+  },
+  {
+    "semester": 2,
+    "subjects": [
+      {
+        "title": "Professional English – II",
+        "subject_code": "HS3251",
+        "url": "https://jeppiaarcollege.org/jeppiaar/wp-content/uploads/2024/03/HS3251-NOTES-SEM-II.pdf"
+      },
+      {
+        "title": "Statistics and Numerical Methods",
+        "subject_code": "MA3251",
+        "url": "https://www.msajce-edu.in/academics/it/2021/LectureNote/MA3251-LN.pdf"
+      },
+      {
+        "title": "Physics for Information Science",
+        "subject_code": "PH3256",
+        "url": "https://www.pietech.edu.in/doc/Lecture%20Notes/S-H/Sem%20II/PH3256%20Physics%20for%20Information%20science.pdf"
+      },
+      {
+        "title": "Basic Electrical and Electronics Engineering",
+        "subject_code": "BE3251",
+        "url": "https://www.enggtree.com/wp-content/uploads/2022/09/BE3251-Basic-Electrical-and-Electronics-Engineering-Lecture-Notes-1.pdf?x53111"
+      },
+      {
+        "title": "Engineering Graphics",
+        "subject_code": "GE3251",
+        "url": "https://www.enggtree.com/wp-content/uploads/2022/11/GE3251-Engineering-Graphics-Lecture-Notes-1.pdf?x53111"
+      },
+      {
+        "title": "Programming in C",
+        "subject_code": "CS3251",
+        "url": "https://www.enggtree.com/wp-content/uploads/2022/11/GE3251-Engineering-Graphics-Lecture-Notes-1.pdf?x53111"
+      }
+    ]
+  },
+  {
+    "semester": 3,
+    "subjects": [
+      {
+        "title": "Discrete Mathematics",
+        "subject_code": "MA3354",
+        "url": "https://www.enggtree.com/wp-content/uploads/2022/11/MA3354-Discrete-Mathematics-Lecture-Notes-1.pdf?x53111"
+      },
+      {
+        "title": "Digital Principles and Computer Organization",
+        "subject_code": "CS3351",
+        "url": "https://www.enggtree.com/wp-content/uploads/2023/02/CS3351-Digital-Principles-and-Computer-Organization-Lecture-Notes-1.pdf?x53111"
+      },
+      {
+        "title": "Object-Oriented Programming",
+        "subject_code": "CS3391",
+        "url": "https://www.cet.edu.in/noticefiles/285_OOPS%20lecture%20notes%20Complete.pdf"
+      },
+      {
+        "title": "Data Structures",
+        "subject_code": "CS3392",
+        "url": "https://mrcet.com/downloads/digital_notes/CSE/II%20Year/DATA%20STRUCTURES%20DIGITAL%20NOTES.pdf"
+      },
+      {
+        "title": "Data Science",
+        "subject_code": "CS3353",
+        "url": "https://prathyusha.edu.in/wp-content/uploads/2023/11/DataScience.pdf"
+      },
+      {
+        "title": "Professional Development",
+        "subject_code": "GE3361",
+        "url": "https://example.com/GE3361_notes"
+      }
+    ]
+  },
+  {
+    "semester": 4,
+    "subjects": [
+      {
+        "title": "Probability and Statistics",
+        "subject_code": "MA3391",
+        "url": "https://www.enggtree.com/wp-content/uploads/2023/06/MA3391-Probability-and-Statistics-Lecture-Notes-1.pdf?x53111"
+      },
+      {
+        "title": "AIML",
+        "subject_code": "CS3491",
+        "url": "https://sites.google.com/view/cs3491-aiml-cse/notes"
+      },
+      {
+        "title": "Database Management Systems",
+        "subject_code": "CS3492",
+        "url": "https://mrcet.com/downloads/digital_notes/CSE/II%20Year/DBMS.pdf"
+      },
+      {
+        "title": "Operating Systems",
+        "subject_code": "CS3493",
+        "url": "https://www.stannescet.ac.in/cms/staff/qbank/CSE/Notes/CS8493-OPERATING%20SYSTEMS-500829502-CS8493%20OS.pdf"
+      },
+      {
+        "title": "Design and Analysis of Algorithms",
+        "subject_code": "CS3494",
+        "url": "https://vssut.ac.in/lecture_notes/lecture1428551222.pdf"
+      },
+      {
+        "title": "Environmental Sciences and Sustainability",
+        "subject_code": "GE3451",
+        "url": "https://msajce-edu.in/academics/mech/LectureNote/GE3451-LN.pdf"
+      }
+    ]
+  }
+]
