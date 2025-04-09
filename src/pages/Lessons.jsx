@@ -22,7 +22,7 @@ function Lessons() {
         setLessons(allSubjects)
       })
   }, []
-// unjeurfvfdsc
+// unjeurfvfdscjj
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('completedLessons')) || []
